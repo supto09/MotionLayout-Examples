@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            xmlns:tools="http://schemas.android.com/tools" android:id="@+id/nav_graph.xml"
+            app:startDestination="@id/circularStepFragment">
+
+    <fragment android:id="@+id/circularStepFragment"
+              android:name="com.example.motionlayoutexamples.CircularStepFragment"
+              android:label="fragment_circular_step" tools:layout="@layout/fragment_circular_step"/>
+</navigation>
