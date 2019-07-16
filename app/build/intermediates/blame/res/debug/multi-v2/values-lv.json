@@ -1,10 +1,27 @@
 {
     "logs": [
         {
-            "outputFile": "/Users/supto/AndroidStudioProjects/MotionLayoutExamples/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-lv/values-lv.xml",
+            "outputFile": "/home/supto/AndroidStudioProjects/MotionLayout-Examples/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-lv/values-lv.xml",
             "map": [
                 {
-                    "source": "/Users/supto/.gradle/caches/transforms-2/files-2.1/769fe0ef769741c40f17e6b968b69fbf/appcompat-1.1.0-alpha05/res/values-lv/values-lv.xml",
+                    "source": "/home/supto/.gradle/caches/transforms-2/files-2.1/e049bf7561a54320a93f4c01968d5f47/core-1.1.0-rc01/res/values-lv/values-lv.xml",
+                    "from": {
+                        "startLines": "2",
+                        "startColumns": "4",
+                        "startOffsets": "55",
+                        "endColumns": "100",
+                        "endOffsets": "151"
+                    },
+                    "to": {
+                        "startLines": "32",
+                        "startColumns": "4",
+                        "startOffsets": "3308",
+                        "endColumns": "100",
+                        "endOffsets": "3404"
+                    }
+                },
+                {
+                    "source": "/home/supto/.gradle/caches/transforms-2/files-2.1/a7ed133d8992f4d1bd82e1754701916d/appcompat-1.1.0-alpha05/res/values-lv/values-lv.xml",
                     "from": {
                         "startLines": "2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29",
                         "startColumns": "4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4",
@@ -21,7 +38,7 @@
                     }
                 },
                 {
-                    "source": "/Users/supto/.gradle/caches/transforms-2/files-2.1/fe31c5076899180df4c82879d109a1b9/jetified-navigation-ui-2.1.0-alpha06/res/values-lv/values-lv.xml",
+                    "source": "/home/supto/.gradle/caches/transforms-2/files-2.1/020f40a7fa1958e4f6dd54cc66d35a6d/jetified-navigation-ui-2.1.0-alpha06/res/values-lv/values-lv.xml",
                     "from": {
                         "startLines": "2,3",
                         "startColumns": "4,4",
@@ -35,23 +52,6 @@
                         "startOffsets": "2989,3103",
                         "endColumns": "113,122",
                         "endOffsets": "3098,3221"
-                    }
-                },
-                {
-                    "source": "/Users/supto/.gradle/caches/transforms-2/files-2.1/051873d20531047b0bb94ce3c9ff57d9/core-1.1.0-rc01/res/values-lv/values-lv.xml",
-                    "from": {
-                        "startLines": "2",
-                        "startColumns": "4",
-                        "startOffsets": "55",
-                        "endColumns": "100",
-                        "endOffsets": "151"
-                    },
-                    "to": {
-                        "startLines": "32",
-                        "startColumns": "4",
-                        "startOffsets": "3308",
-                        "endColumns": "100",
-                        "endOffsets": "3404"
                     }
                 }
             ]

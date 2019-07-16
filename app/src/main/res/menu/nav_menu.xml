@@ -2,34 +2,35 @@
 <menu xmlns:android="http://schemas.android.com/apk/res/android">
 	
 	<item
+			android:checked="true"
+			android:id="@+id/parallaxFragment"
 			android:checkable="true"
 			android:icon="@drawable/ic_inbox"
-			android:title="Inbox" />
+			android:title="Parallax"/>
 	<item
-			android:checked="true"
 			android:checkable="true"
 			android:icon="@drawable/ic_outbox"
-			android:title="OutBox" />
+			android:title="OutBox"/>
 	<item
 			android:checkable="true"
 			android:icon="@drawable/ic_trash"
-			android:title="Trash" />
+			android:title="Trash"/>
 	<item
 			android:checkable="true"
 			android:icon="@drawable/ic_spam"
-			android:title="Spam" />
+			android:title="Spam"/>
 	<item
 			android:checkable="true"
 			android:icon="@drawable/ic_forum"
-			android:title="Forum" />
+			android:title="Forum"/>
 	<item
 			android:checkable="true"
 			android:icon="@drawable/ic_update"
-			android:title="Update" />
+			android:title="Update"/>
 	<item
 			android:checkable="true"
 			android:icon="@drawable/ic_promos"
-			android:title="Promos" />
+			android:title="Promos"/>
 
 
 </menu>

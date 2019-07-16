@@ -2,9 +2,11 @@
 <navigation xmlns:android="http://schemas.android.com/apk/res/android"
             xmlns:app="http://schemas.android.com/apk/res-auto"
             xmlns:tools="http://schemas.android.com/tools" android:id="@+id/nav_graph.xml"
-            app:startDestination="@id/circularStepFragment">
+            app:startDestination="@id/parallaxFragment">
 
     <fragment android:id="@+id/circularStepFragment"
               android:name="com.example.motionlayoutexamples.CircularStepFragment"
               android:label="fragment_circular_step" tools:layout="@layout/fragment_circular_step"/>
+    <fragment android:id="@+id/parallaxFragment" android:name="com.example.motionlayoutexamples.ParallaxFragment"
+              android:label="fragment_parallax" tools:layout="@layout/fragment_parallax"/>
 </navigation>

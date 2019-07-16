@@ -1,7 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <MotionScene xmlns:android="http://schemas.android.com/apk/res/android"
-		xmlns:app="http://schemas.android.com/apk/res-auto"
-		xmlns:motion="http://schemas.android.com/tools">
+			 xmlns:app="http://schemas.android.com/apk/res-auto">
 	
 	<Transition
 			app:constraintSetEnd="@id/end"
@@ -18,15 +17,16 @@
 				app:layout_constraintBottom_toBottomOf="parent"
 				app:layout_constraintLeft_toLeftOf="parent"
 				app:layout_constraintRight_toRightOf="parent"
-				app:layout_constraintTop_toBottomOf="@+id/appBarLayout" />
+				app:layout_constraintTop_toTopOf="parent"/>
 		<Constraint
 				android:id="@+id/appBarLayout"
-				android:translationX="0dp"
 				android:layout_width="0dp"
 				android:layout_height="?actionBarSize"
+				android:translationX="0dp"
+				app:elevation="0dp"
 				app:layout_constraintEnd_toEndOf="parent"
 				app:layout_constraintStart_toStartOf="parent"
-				app:layout_constraintTop_toTopOf="parent" />
+				app:layout_constraintTop_toTopOf="parent"/>
 	</ConstraintSet>
 	
 	<!--	android:layout_marginLeft="280dp"-->
@@ -38,23 +38,15 @@
 				app:layout_constraintBottom_toBottomOf="parent"
 				app:layout_constraintLeft_toLeftOf="parent"
 				app:layout_constraintRight_toRightOf="parent"
-				app:layout_constraintTop_toBottomOf="@+id/appBarLayout" />
+				app:layout_constraintTop_toTopOf="parent"/>
 		<Constraint
 				android:id="@+id/appBarLayout"
-				android:translationX="280dp"
 				android:layout_width="0dp"
 				android:layout_height="?actionBarSize"
+				android:translationX="280dp"
+				app:elevation="0dp"
 				app:layout_constraintEnd_toEndOf="parent"
 				app:layout_constraintStart_toStartOf="parent"
 				app:layout_constraintTop_toTopOf="parent"/>
 	</ConstraintSet>
-	
-	<KeyFrameSet>
-		<KeyPosition
-				motion:framePosition="50"
-				motion:keyPositionType="pathRelative"
-				motion:motionTarget="@id/nav_host_fragment"
-				motion:percentX="-0.3" />
-	</KeyFrameSet>
-
 </MotionScene>

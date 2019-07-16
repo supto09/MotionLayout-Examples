@@ -1,10 +1,10 @@
 {
     "logs": [
         {
-            "outputFile": "/Users/supto/AndroidStudioProjects/MotionLayoutExamples/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-v23/values-v23.xml",
+            "outputFile": "/home/supto/AndroidStudioProjects/MotionLayout-Examples/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-v23/values-v23.xml",
             "map": [
                 {
-                    "source": "/Users/supto/.gradle/caches/transforms-2/files-2.1/3af2737bc00a19c617c3bc94f5ee14b5/cardview-1.0.0/res/values-v23/values-v23.xml",
+                    "source": "/home/supto/.gradle/caches/transforms-2/files-2.1/72ae31c8129835e7a9e75b7e71ee1e76/cardview-1.0.0/res/values-v23/values-v23.xml",
                     "from": {
                         "startLines": "2",
                         "startColumns": "4",
@@ -23,18 +23,7 @@
                     }
                 },
                 {
-                    "source": "/Users/supto/.gradle/caches/transforms-2/files-2.1/769fe0ef769741c40f17e6b968b69fbf/appcompat-1.1.0-alpha05/res/values-v23/values-v23.xml",
-                    "from": {
-                        "startLines": "2,3,4,5,6,20,34,35,36,37,41,42,43,44",
-                        "startColumns": "4,4,4,4,4,4,4,4,4,4,4,4,4,4",
-                        "startOffsets": "55,190,325,400,487,1371,2267,2386,2513,2618,2842,2957,3064,3177",
-                        "endLines": "2,3,4,5,19,33,34,35,36,40,41,42,43,47",
-                        "endColumns": "134,134,74,86,12,12,118,126,104,12,114,106,112,12",
-                        "endOffsets": "185,320,395,482,1366,2262,2381,2508,2613,2837,2952,3059,3172,3402"
-                    }
-                },
-                {
-                    "source": "/Users/supto/.gradle/caches/transforms-2/files-2.1/d7d4ce7191930159e600066dbd8303d2/material-1.1.0-alpha07/res/values-v23/values-v23.xml",
+                    "source": "/home/supto/.gradle/caches/transforms-2/files-2.1/f53ee9b60d9f48305f550ee255443628/material-1.1.0-alpha07/res/values-v23/values-v23.xml",
                     "from": {
                         "startLines": "2,6,9,12,16,19",
                         "startColumns": "4,4,4,4,4,4",
@@ -50,6 +39,17 @@
                         "endLines": "54,57,60,64,67,70",
                         "endColumns": "10,10,10,10,10,10",
                         "endOffsets": "3827,3999,4159,4442,4618,4787"
+                    }
+                },
+                {
+                    "source": "/home/supto/.gradle/caches/transforms-2/files-2.1/a7ed133d8992f4d1bd82e1754701916d/appcompat-1.1.0-alpha05/res/values-v23/values-v23.xml",
+                    "from": {
+                        "startLines": "2,3,4,5,6,20,34,35,36,37,41,42,43,44",
+                        "startColumns": "4,4,4,4,4,4,4,4,4,4,4,4,4,4",
+                        "startOffsets": "55,190,325,400,487,1371,2267,2386,2513,2618,2842,2957,3064,3177",
+                        "endLines": "2,3,4,5,19,33,34,35,36,40,41,42,43,47",
+                        "endColumns": "134,134,74,86,12,12,118,126,104,12,114,106,112,12",
+                        "endOffsets": "185,320,395,482,1366,2262,2381,2508,2613,2837,2952,3059,3172,3402"
                     }
                 }
             ]
