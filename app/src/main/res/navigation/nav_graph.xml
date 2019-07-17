@@ -9,4 +9,9 @@
               android:label="fragment_circular_step" tools:layout="@layout/fragment_circular_step"/>
     <fragment android:id="@+id/parallaxFragment" android:name="com.example.motionlayoutexamples.ParallaxFragment"
               android:label="fragment_parallax" tools:layout="@layout/fragment_parallax"/>
+    <fragment
+            android:id="@+id/endomondoFragment"
+            android:name="com.example.motionlayoutexamples.EndomondoFragment"
+            android:label="fragment_endomondo"
+            tools:layout="@layout/fragment_endomondo" />
 </navigation>

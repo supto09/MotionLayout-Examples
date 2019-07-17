@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<MotionScene xmlns:android="http://schemas.android.com/apk/res/android"
+		xmlns:app="http://schemas.android.com/apk/res-auto">
+	
+	<Transition
+			app:constraintSetEnd="@id/end"
+			app:constraintSetStart="@id/start"
+			app:duration="1000">
+		
+		<OnClick
+				app:clickAction="toggle"
+				app:target="@id/button" />
+		
+		<OnSwipe
+				app:dragDirection="dragUp"
+				app:touchAnchorId="@id/cardView" />
+	
+	</Transition>
+	
+	
+	<ConstraintSet android:id="@+id/start">
+		<Constraint
+				android:id="@id/guideline"
+				android:orientation="horizontal"
+				app:layout_constraintGuide_percent="0.4" />
+		
+		<Constraint
+				android:id="@id/speedTv"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:layout_marginBottom="8dp"
+				android:alpha="1"
+				android:elevation="4dp"
+				android:text="0"
+				android:textSize="30sp"
+				android:textStyle="bold"
+				app:layout_constraintBottom_toTopOf="@+id/speedLabelTv"
+				app:layout_constraintEnd_toEndOf="@+id/speedLabelTv"
+				app:layout_constraintStart_toStartOf="@+id/speedLabelTv" />
+		
+		<Constraint
+				android:id="@+id/speedLabelTv"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:layout_marginBottom="16dp"
+				android:alpha="1"
+				android:elevation="4dp"
+				android:text="Speed"
+				app:layout_constraintBottom_toTopOf="@+id/guideline"
+				app:layout_constraintEnd_toEndOf="parent"
+				app:layout_constraintStart_toStartOf="parent" />
+		
+		
+		<Constraint
+				android:id="@+id/caloriesLabelTv"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:layout_marginBottom="16dp"
+				android:elevation="4dp"
+				android:text="Calories"
+				app:layout_constraintBottom_toTopOf="@+id/speedTv"
+				app:layout_constraintEnd_toEndOf="@+id/speedLabelTv"
+				app:layout_constraintStart_toStartOf="@+id/speedLabelTv" />
+	
+	
+	</ConstraintSet>
+	
+	<ConstraintSet android:id="@+id/end">
+		<Constraint
+				android:id="@id/guideline"
+				android:orientation="horizontal"
+				app:layout_constraintGuide_percent="0.2" />
+		
+		<Constraint
+				android:id="@id/speedTv"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:layout_marginBottom="8dp"
+				android:alpha="0"
+				android:elevation="4dp"
+				android:text="0"
+				android:textSize="30sp"
+				android:textStyle="bold"
+				app:layout_constraintBottom_toTopOf="@+id/speedLabelTv"
+				app:layout_constraintEnd_toEndOf="@+id/speedLabelTv"
+				app:layout_constraintStart_toStartOf="@+id/speedLabelTv" />
+		
+		<Constraint
+				android:id="@+id/speedLabelTv"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:layout_marginBottom="16dp"
+				android:alpha="0"
+				android:elevation="4dp"
+				android:text="Speed"
+				app:layout_constraintBottom_toTopOf="@+id/guideline"
+				app:layout_constraintEnd_toEndOf="parent"
+				app:layout_constraintStart_toStartOf="parent" />
+		
+		<Constraint
+				android:id="@+id/caloriesLabelTv"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:layout_marginBottom="16dp"
+				android:elevation="4dp"
+				android:text="Calories"
+				app:layout_constraintBottom_toTopOf="@+id/guideline"
+				app:layout_constraintEnd_toEndOf="@+id/speedLabelTv"
+				app:layout_constraintStart_toStartOf="@+id/speedLabelTv" />
+	
+	
+	</ConstraintSet>
+</MotionScene>

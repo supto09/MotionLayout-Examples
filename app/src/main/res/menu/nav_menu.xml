@@ -8,6 +8,7 @@
 			android:icon="@drawable/ic_inbox"
 			android:title="Parallax"/>
 	<item
+			android:id="@+id/endomondoFragment"
 			android:checkable="true"
 			android:icon="@drawable/ic_outbox"
 			android:title="Endomondo" />

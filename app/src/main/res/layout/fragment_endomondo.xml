@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.motion.widget.MotionLayout xmlns:android="http://schemas.android.com/apk/res/android"
+		xmlns:app="http://schemas.android.com/apk/res-auto"
+		xmlns:tools="http://schemas.android.com/tools"
+		android:layout_width="match_parent"
+		android:layout_height="match_parent"
+		app:layoutDescription="@xml/motion_endomondo"
+		tools:context=".EndomondoFragment">
+	
+	<com.google.android.material.card.MaterialCardView
+			android:id="@+id/cardView"
+			android:layout_width="0dp"
+			android:layout_height="0dp"
+			app:cardElevation="4dp"
+			app:layout_constraintBottom_toTopOf="@+id/guideline"
+			app:layout_constraintEnd_toEndOf="parent"
+			app:layout_constraintHorizontal_bias="0.0"
+			app:layout_constraintStart_toStartOf="parent"
+			app:layout_constraintTop_toTopOf="parent"
+			app:layout_constraintVertical_bias="0.0" />
+	
+	<View
+			android:id="@+id/view"
+			android:layout_width="match_parent"
+			android:layout_height="?actionBarSize"
+			android:background="@color/colorPrimary"
+			android:elevation="4dp"
+			app:layout_constraintEnd_toEndOf="parent"
+			app:layout_constraintStart_toStartOf="parent"
+			app:layout_constraintTop_toTopOf="parent" />
+	
+	<androidx.constraintlayout.widget.Guideline
+			android:id="@+id/guideline"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:orientation="horizontal"
+			app:layout_constraintGuide_percent="0.4" />
+	
+	<TextView
+			android:id="@+id/distanceLabelTv"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_marginStart="16dp"
+			android:layout_marginBottom="16dp"
+			android:elevation="4dp"
+			android:text="Distance"
+			app:layout_constraintBottom_toTopOf="@+id/guideline"
+			app:layout_constraintStart_toStartOf="parent" />
+	
+	<TextView
+			android:id="@+id/durationLabelTv"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_marginEnd="16dp"
+			android:layout_marginBottom="16dp"
+			android:elevation="4dp"
+			android:text="Duration"
+			app:layout_constraintBottom_toTopOf="@+id/guideline"
+			app:layout_constraintEnd_toEndOf="parent" />
+	
+	<TextView
+			android:id="@+id/speedLabelTv"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_marginBottom="16dp"
+			android:elevation="4dp"
+			android:text="Speed"
+			app:layout_constraintBottom_toTopOf="@+id/guideline"
+			app:layout_constraintEnd_toEndOf="parent"
+			app:layout_constraintStart_toStartOf="parent" />
+	
+	<TextView
+			android:id="@+id/distanceTv"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_marginBottom="8dp"
+			android:elevation="4dp"
+			android:text="0"
+			android:textSize="30sp"
+			android:textStyle="bold"
+			app:layout_constraintBottom_toTopOf="@+id/distanceLabelTv"
+			app:layout_constraintEnd_toEndOf="@+id/distanceLabelTv"
+			app:layout_constraintStart_toStartOf="@+id/distanceLabelTv" />
+	
+	<TextView
+			android:id="@+id/speedTv"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_marginBottom="8dp"
+			android:elevation="4dp"
+			android:text="0"
+			android:textSize="30sp"
+			android:textStyle="bold"
+			app:layout_constraintBottom_toTopOf="@+id/speedLabelTv"
+			app:layout_constraintEnd_toEndOf="@+id/speedLabelTv"
+			app:layout_constraintStart_toStartOf="@+id/speedLabelTv" />
+	
+	<TextView
+			android:id="@+id/textView8"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_marginBottom="8dp"
+			android:elevation="4dp"
+			android:text="0"
+			android:textSize="30sp"
+			android:textStyle="bold"
+			app:layout_constraintBottom_toTopOf="@+id/durationLabelTv"
+			app:layout_constraintEnd_toEndOf="@+id/durationLabelTv"
+			app:layout_constraintStart_toStartOf="@+id/durationLabelTv" />
+	
+	<TextView
+			android:id="@+id/caloriesLabelTv"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_marginBottom="16dp"
+			android:elevation="4dp"
+			android:text="Calories"
+			app:layout_constraintBottom_toTopOf="@+id/speedTv"
+			app:layout_constraintEnd_toEndOf="@+id/speedLabelTv"
+			app:layout_constraintStart_toStartOf="@+id/speedLabelTv" />
+	
+	<TextView
+			android:id="@+id/caloriesTv"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_marginBottom="8dp"
+			android:elevation="4dp"
+			android:text="0"
+			android:textSize="36sp"
+			android:textStyle="bold"
+			app:layout_constraintBottom_toTopOf="@+id/caloriesLabelTv"
+			app:layout_constraintEnd_toEndOf="@+id/caloriesLabelTv"
+			app:layout_constraintStart_toStartOf="@+id/caloriesLabelTv" />
+	
+	<Button
+			android:id="@+id/button"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_marginStart="162dp"
+			android:layout_marginEnd="161dp"
+			android:layout_marginBottom="32dp"
+			android:text="Button"
+			app:layout_constraintBottom_toBottomOf="parent"
+			app:layout_constraintEnd_toEndOf="parent"
+			app:layout_constraintStart_toStartOf="parent" />
+	
+	<ScrollView
+			android:layout_width="match_parent"
+			android:layout_height="0dp"
+			app:layout_constraintBottom_toBottomOf="parent"
+			app:layout_constraintEnd_toEndOf="parent"
+			app:layout_constraintStart_toStartOf="parent"
+			app:layout_constraintTop_toBottomOf="@+id/guideline">
+		
+		<androidx.constraintlayout.widget.ConstraintLayout
+				android:layout_width="match_parent"
+				android:layout_height="700dp">
+			
+			<TextView
+					android:layout_width="0dp"
+					android:layout_height="600dp"
+					android:gravity="center"
+					android:text="This will be a map"
+					app:layout_constraintBottom_toBottomOf="parent"
+					app:layout_constraintEnd_toEndOf="parent"
+					app:layout_constraintStart_toStartOf="parent"
+					app:layout_constraintTop_toTopOf="parent" />
+		
+		</androidx.constraintlayout.widget.ConstraintLayout>
+	</ScrollView>
+
+
+</androidx.constraintlayout.motion.widget.MotionLayout>

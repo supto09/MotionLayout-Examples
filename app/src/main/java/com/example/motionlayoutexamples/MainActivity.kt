@@ -2,14 +2,12 @@ package com.example.motionlayoutexamples
 
 import android.graphics.Color
 import android.os.Bundle
-import android.view.MenuItem
 import android.view.View
 import androidx.appcompat.app.ActionBarDrawerToggle
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.view.GravityCompat
 import androidx.drawerlayout.widget.DrawerLayout
 import androidx.navigation.Navigation
-import com.google.android.material.navigation.NavigationView
 import kotlinx.android.synthetic.main.activity_main.*
 
 
@@ -31,8 +29,8 @@ class MainActivity : AppCompatActivity() {
         navigationView.setNavigationItemSelectedListener { item ->
             when (item.itemId) {
                 R.id.parallaxFragment -> navController.navigate(R.id.parallaxFragment)
+                R.id.endomondoFragment -> navController.navigate(R.id.endomondoFragment)
                 else -> navController.navigate(R.id.circularStepFragment)
-
             }
 
             drawerLayout.closeDrawer(GravityCompat.START)
