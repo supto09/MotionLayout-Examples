@@ -2,11 +2,10 @@
 A sample project with different use of MotionLayout
 
 ## Navigation Drawer
-![Navigation Drawer](https://github.com/supto09/MotionLayout-Examples/blob/master/app/ss/drawer_ss.gif =250x)
-<img src="https://github.com/supto09/MotionLayout-Examples/blob/master/app/ss/drawer_ss.gif" alt="drawing" width="200"/>
+<img src="https://github.com/supto09/MotionLayout-Examples/blob/master/app/ss/drawer_ss.gif" alt="Navigation Drawer" width="250"/>
 
 ## Collapsing toolbar
-![Collapsing toolbar](https://github.com/supto09/MotionLayout-Examples/blob/master/app/ss/collapsing_toolbar.gif)
+<img src="https://github.com/supto09/MotionLayout-Examples/blob/master/app/ss/collapsing_toolbar.gif" alt="Collapsing toolbar" width="250"/>
 
 ## Endomondo
-![Endomondo](https://github.com/supto09/MotionLayout-Examples/blob/master/app/ss/endomondo_design.gif)
+<img src="https://github.com/supto09/MotionLayout-Examples/blob/master/app/ss/endomondo_design.gif" alt="Endomondo" width="250"/>
