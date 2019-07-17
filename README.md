@@ -7,5 +7,5 @@ A sample project with different use of MotionLayout
 ## Collapsing toolbar
 <img src="https://github.com/supto09/MotionLayout-Examples/blob/master/app/ss/collapsing_toolbar.gif" alt="Collapsing toolbar" width="250"/>
 
-## Endomondo
+## Endomondo App Home Page
 <img src="https://github.com/supto09/MotionLayout-Examples/blob/master/app/ss/endomondo_design.gif" alt="Endomondo" width="250"/>
