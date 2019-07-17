@@ -7,10 +7,6 @@
 			app:constraintSetStart="@id/start"
 			app:duration="1000">
 		
-		<OnClick
-				app:clickAction="toggle"
-				app:target="@id/button" />
-		
 		<OnSwipe
 				app:dragDirection="dragUp"
 				app:touchAnchorId="@id/cardView" />
