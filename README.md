@@ -3,6 +3,7 @@ A sample project with different use of MotionLayout
 
 ## Navigation Drawer
 ![Navigation Drawer](https://github.com/supto09/MotionLayout-Examples/blob/master/app/ss/drawer_ss.gif =250x)
+<img src="https://github.com/supto09/MotionLayout-Examples/blob/master/app/ss/drawer_ss.gif" alt="drawing" width="200"/>
 
 ## Collapsing toolbar
 ![Collapsing toolbar](https://github.com/supto09/MotionLayout-Examples/blob/master/app/ss/collapsing_toolbar.gif)
