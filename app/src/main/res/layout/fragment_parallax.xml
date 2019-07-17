@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.motion.widget.MotionLayout
+		xmlns:android="http://schemas.android.com/apk/res/android"
+		xmlns:app="http://schemas.android.com/apk/res-auto"
+		xmlns:tools="http://schemas.android.com/tools"
+		android:layout_width="match_parent"
+		android:layout_height="match_parent"
+		app:layoutDescription="@xml/motion_parallax_fragment"
+		tools:context=".ParallaxFragment">
+	
+	<com.google.android.material.appbar.AppBarLayout
+			android:id="@+id/appBarLayout2"
+			android:layout_width="match_parent"
+			android:layout_height="?actionBarSize"
+			app:elevation="0dp">
+		
+		<Toolbar
+				android:layout_width="match_parent"
+				android:layout_height="match_parent"/>
+	
+	</com.google.android.material.appbar.AppBarLayout>
+	
+	
+	<ImageView
+			android:id="@+id/posterImageView"
+			android:layout_width="0dp"
+			android:layout_height="0dp"
+			android:clickable="true"
+			android:scaleType="centerCrop"
+			android:src="@drawable/background_godzilla_poster"
+			app:layout_constraintDimensionRatio="800:418"
+			app:layout_constraintEnd_toEndOf="parent"
+			app:layout_constraintStart_toStartOf="parent"
+			app:layout_constraintTop_toTopOf="parent"/>
+	
+	<TextView
+			android:id="@+id/titleTv"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_marginStart="16dp"
+			android:layout_marginBottom="16dp"
+			android:text="Popular Movies"
+			android:textColor="@android:color/white"
+			android:textSize="18sp"
+			app:layout_constraintBottom_toTopOf="@+id/recyclerView"
+			app:layout_constraintStart_toStartOf="parent"/>
+	
+	<androidx.recyclerview.widget.RecyclerView
+			android:id="@+id/recyclerView"
+			android:layout_width="0dp"
+			android:layout_height="0dp"
+			app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+			app:layout_constraintBottom_toBottomOf="parent"
+			app:layout_constraintEnd_toEndOf="parent"
+			app:layout_constraintStart_toStartOf="parent"
+			app:layout_constraintTop_toBottomOf="@+id/posterImageView"
+			tools:itemCount="10"
+			tools:listitem="@layout/item_recycler_view">
+	
+	</androidx.recyclerview.widget.RecyclerView>
+</androidx.constraintlayout.motion.widget.MotionLayout>
