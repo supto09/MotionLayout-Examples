@@ -9,7 +9,7 @@ import androidx.recyclerview.widget.ListAdapter
 import androidx.recyclerview.widget.RecyclerView
 import kotlinx.android.synthetic.main.item_recycler_view.view.*
 
-class MyRcAdapter(private val context: Context) : ListAdapter<String, MyRcViewHolder>(MyDiffCallback()) {
+class MyRcAdapter (private val context: Context) : ListAdapter<String, MyRcViewHolder>(MyDiffCallback()) {
 
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): MyRcViewHolder {

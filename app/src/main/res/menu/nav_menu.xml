@@ -10,7 +10,7 @@
 	<item
 			android:checkable="true"
 			android:icon="@drawable/ic_outbox"
-			android:title="OutBox"/>
+			android:title="Endomondo" />
 	<item
 			android:checkable="true"
 			android:icon="@drawable/ic_trash"

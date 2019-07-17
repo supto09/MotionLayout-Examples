@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <MotionScene xmlns:android="http://schemas.android.com/apk/res/android"
-			 xmlns:app="http://schemas.android.com/apk/res-auto">
+		xmlns:app="http://schemas.android.com/apk/res-auto">
 	
 	<Transition
 			app:constraintSetEnd="@id/end"
@@ -11,7 +11,24 @@
 				app:dragDirection="dragUp"
 				app:moveWhenScrollAtTop="true"
 				app:touchAnchorId="@id/recyclerView"
-				app:touchAnchorSide="top"/>
+				app:touchAnchorSide="top" />
+		
+		<KeyFrameSet>
+			<KeyAttribute
+					app:framePosition="60"
+					app:target="@id/posterImageView">
+				<CustomAttribute
+						app:attributeName="imageAlpha"
+						app:customIntegerValue="255" />
+			</KeyAttribute>
+			<KeyAttribute
+					app:framePosition="100"
+					app:target="@id/posterImageView">
+				<CustomAttribute
+						app:attributeName="imageAlpha"
+						app:customIntegerValue="0" />
+			</KeyAttribute>
+		</KeyFrameSet>
 	
 	
 	</Transition>
@@ -22,12 +39,11 @@
 				android:id="@+id/posterImageView"
 				android:layout_width="0dp"
 				android:layout_height="0dp"
-				android:alpha="1"
 				android:scaleType="centerCrop"
 				app:layout_constraintDimensionRatio="800:418"
 				app:layout_constraintEnd_toEndOf="parent"
 				app:layout_constraintStart_toStartOf="parent"
-				app:layout_constraintTop_toTopOf="parent"/>
+				app:layout_constraintTop_toTopOf="parent" />
 		
 		<Constraint
 				android:id="@+id/titleTv"
@@ -36,7 +52,7 @@
 				android:layout_marginStart="16dp"
 				android:layout_marginBottom="16dp"
 				app:layout_constraintBottom_toTopOf="@+id/recyclerView"
-				app:layout_constraintStart_toStartOf="parent"/>
+				app:layout_constraintStart_toStartOf="parent" />
 	
 	
 	</ConstraintSet>
@@ -46,11 +62,10 @@
 				android:id="@+id/posterImageView"
 				android:layout_width="0dp"
 				android:layout_height="?actionBarSize"
-				android:alpha="0"
 				android:scaleType="centerCrop"
 				app:layout_constraintEnd_toEndOf="parent"
 				app:layout_constraintStart_toStartOf="parent"
-				app:layout_constraintTop_toTopOf="parent"/>
+				app:layout_constraintTop_toTopOf="parent" />
 		
 		<Constraint
 				android:id="@+id/titleTv"
@@ -60,7 +75,7 @@
 				android:layout_marginBottom="4dp"
 				app:layout_constraintBottom_toBottomOf="@+id/appBarLayout2"
 				app:layout_constraintStart_toStartOf="parent"
-				app:layout_constraintTop_toTopOf="@+id/appBarLayout2"/>
+				app:layout_constraintTop_toTopOf="@+id/appBarLayout2" />
 	
 	</ConstraintSet>
 
