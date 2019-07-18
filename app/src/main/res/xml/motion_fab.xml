@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<MotionScene xmlns:android="http://schemas.android.com/apk/res/android"
+		xmlns:app="http://schemas.android.com/apk/res-auto">
+	
+	<Transition
+			app:constraintSetEnd="@id/end"
+			app:constraintSetStart="@id/start"
+			app:duration="250">
+		
+		<OnClick
+				app:clickAction="toggle"
+				app:target="@id/menuFab" />
+		
+		<KeyFrameSet>
+			<KeyAttribute
+					android:alpha="0"
+					app:framePosition="30"
+					app:target="@id/fabOne" />
+			<KeyAttribute
+					android:alpha="0"
+					app:framePosition="30"
+					app:target="@id/fabTwo" />
+			<KeyAttribute
+					android:alpha="0"
+					app:framePosition="30"
+					app:target="@id/fabThree" />
+		</KeyFrameSet>
+	</Transition>
+	
+	
+	<ConstraintSet android:id="@+id/start">
+		
+		<Constraint
+				android:id="@id/fabOne"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:alpha="0"
+				app:layout_constraintCircle="@+id/menuFab"
+				app:layout_constraintCircleAngle="0"
+				app:layout_constraintCircleRadius="0dp" />
+		
+		<Constraint
+				android:id="@id/fabTwo"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:alpha="0"
+				app:layout_constraintCircle="@+id/menuFab"
+				app:layout_constraintCircleAngle="270"
+				app:layout_constraintCircleRadius="0dp" />
+		
+		<Constraint
+				android:id="@id/fabThree"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:alpha="0"
+				app:layout_constraintCircle="@+id/menuFab"
+				app:layout_constraintCircleAngle="270"
+				app:layout_constraintCircleRadius="0dp" />
+	
+	
+	</ConstraintSet>
+	
+	<ConstraintSet android:id="@+id/end">
+		
+		<Constraint
+				android:id="@id/fabOne"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:alpha="1"
+				app:layout_constraintCircle="@+id/menuFab"
+				app:layout_constraintCircleAngle="0"
+				app:layout_constraintCircleRadius="80dp" />
+		
+		<Constraint
+				android:id="@id/fabTwo"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:alpha="1"
+				app:layout_constraintCircle="@+id/menuFab"
+				app:layout_constraintCircleAngle="315"
+				app:layout_constraintCircleRadius="80dp" />
+		
+		<Constraint
+				android:id="@id/fabThree"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:alpha="1"
+				app:layout_constraintCircle="@+id/menuFab"
+				app:layout_constraintCircleAngle="270"
+				app:layout_constraintCircleRadius="80dp" />
+	
+	</ConstraintSet>
+</MotionScene>

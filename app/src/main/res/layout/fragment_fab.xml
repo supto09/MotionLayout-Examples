@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.motion.widget.MotionLayout xmlns:android="http://schemas.android.com/apk/res/android"
+		xmlns:app="http://schemas.android.com/apk/res-auto"
+		xmlns:tools="http://schemas.android.com/tools"
+		android:id="@+id/motionLayout"
+		android:layout_width="match_parent"
+		android:layout_height="match_parent"
+		app:layoutDescription="@xml/motion_fab"
+		tools:context=".FabFragment">
+	
+	
+	<com.google.android.material.appbar.AppBarLayout
+			android:id="@+id/appBarLayout"
+			android:layout_width="match_parent"
+			android:layout_height="?actionBarSize"
+			app:layout_constraintEnd_toEndOf="parent"
+			app:layout_constraintStart_toStartOf="parent"
+			app:layout_constraintTop_toTopOf="parent">
+		
+		<androidx.appcompat.widget.Toolbar
+				android:layout_width="match_parent"
+				android:layout_height="match_parent" />
+	</com.google.android.material.appbar.AppBarLayout>
+	
+	
+	<com.google.android.material.floatingactionbutton.FloatingActionButton
+			android:id="@+id/fabOne"
+			style="@style/Widget.MaterialComponents.FloatingActionButton"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			app:backgroundTint="@color/colorAccent"
+			app:layout_constraintCircle="@+id/menuFab"
+			app:layout_constraintCircleAngle="270"
+			app:layout_constraintCircleRadius="0dp"
+			app:srcCompat="@drawable/ic_promos"
+			app:tint="@android:color/white" />
+	
+	<com.google.android.material.floatingactionbutton.FloatingActionButton
+			android:id="@+id/fabTwo"
+			style="@style/Widget.MaterialComponents.FloatingActionButton"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			app:backgroundTint="@color/colorAccent"
+			app:layout_constraintCircle="@+id/menuFab"
+			app:layout_constraintCircleAngle="270"
+			app:layout_constraintCircleRadius="0dp"
+			app:srcCompat="@drawable/ic_spam"
+			app:tint="@android:color/white" />
+	
+	<com.google.android.material.floatingactionbutton.FloatingActionButton
+			android:id="@+id/fabThree"
+			style="@style/Widget.MaterialComponents.FloatingActionButton"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			app:backgroundTint="@color/colorAccent"
+			app:layout_constraintCircle="@+id/menuFab"
+			app:layout_constraintCircleAngle="270"
+			app:layout_constraintCircleRadius="0dp"
+			app:srcCompat="@drawable/ic_trash"
+			app:tint="@android:color/white" />
+	
+	
+	<com.google.android.material.floatingactionbutton.FloatingActionButton
+			android:id="@+id/menuFab"
+			style="@style/Widget.MaterialComponents.FloatingActionButton"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_marginEnd="16dp"
+			android:layout_marginBottom="16dp"
+			app:backgroundTint="@color/colorPrimary"
+			app:layout_constraintBottom_toBottomOf="parent"
+			app:layout_constraintEnd_toEndOf="parent"
+			app:srcCompat="@drawable/ic_add"
+			app:tint="@android:color/white" />
+
+
+</androidx.constraintlayout.motion.widget.MotionLayout>
