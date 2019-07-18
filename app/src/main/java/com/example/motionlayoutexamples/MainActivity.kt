@@ -30,6 +30,7 @@ class MainActivity : AppCompatActivity() {
             when (item.itemId) {
                 R.id.parallaxFragment -> navController.navigate(R.id.parallaxFragment)
                 R.id.endomondoFragment -> navController.navigate(R.id.endomondoFragment)
+                R.id.fabFragment -> navController.navigate(R.id.fabFragment)
                 else -> navController.navigate(R.id.circularStepFragment)
             }
 

@@ -13,9 +13,10 @@
 			android:icon="@drawable/ic_outbox"
 			android:title="Endomondo" />
 	<item
+			android:id="@+id/fabFragment"
 			android:checkable="true"
 			android:icon="@drawable/ic_trash"
-			android:title="Trash"/>
+			android:title="Fab" />
 	<item
 			android:checkable="true"
 			android:icon="@drawable/ic_spam"

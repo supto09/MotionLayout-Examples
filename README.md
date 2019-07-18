@@ -9,3 +9,6 @@ A sample project with different use of MotionLayout
 
 ## Endomondo App Home Page
 <img src="https://github.com/supto09/MotionLayout-Examples/blob/master/app/ss/endomondo.gif" alt="Endomondo" width="250"/>
+
+## Fab Reveal Animation
+<img src="https://github.com/supto09/MotionLayout-Examples/blob/master/app/ss/fab.gif" alt="Fab Reveal Animation" width="250"/>
